@@ -11,22 +11,22 @@ class Exercise1 {
 		// Bahagikan nombor tersebut dengan 2, jika baklinya adalah kosong, maka print nomber tersebut ialah even
 		
 		int num;
-	    System.out.print("Enter an Integer number : ");
+	        System.out.print("Enter an Integer number : ");
 
-	    // The input provided by user is stored in num
-	    Scanner scanMe = new Scanner(System.in);
-	    num = scanMe.nextInt();
+	        // The input provided by user is stored in num
+	        Scanner scanMe = new Scanner(System.in);
+	        num = scanMe.nextInt();
 
-	    // If number is divisible by 2 then it's an even number
-	    // else odd number
-	    if ( num % 2 == 0 )
-	    {
-	        System.out.println("Entered number is even");
-	    }
-	    else
-	    {
-	        System.out.println("Entered number is odd");
-	    }
+	        // If number is divisible by 2 then it's an even number
+	        // else odd number
+	        if ( num % 2 == 0 )
+	        {
+	           System.out.println("Entered number is even");
+	        }
+	        else
+	        {
+	           System.out.println("Entered number is odd");
+	        }
 	}
 
 }

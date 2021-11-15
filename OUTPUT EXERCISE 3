@@ -1,0 +1,17 @@
+Enter first subject : Mathematics
+Enter the marks of the first subject : 82
+Enter second subject : Philosophy
+Enter the marks of second the subject : 76
+Your Mathematics has higher marks than Philosophy
+Your Mathematics is PASS
+Your Philosophy is PASS
+Grade B
+
+Enter first subject : Nationhood
+Enter the marks of the first subject : 64
+Enter second subject : Entrepreneurship
+Enter the marks of second the subject : 40
+Your Nationhood has higher marks than Entrepreneurship
+Your Nationhood is PASS
+Your Entrepreneurship is FAILED
+Grade C

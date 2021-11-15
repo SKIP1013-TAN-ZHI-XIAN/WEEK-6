@@ -1,0 +1,74 @@
+package numberTest;
+
+import java.util.Scanner;
+
+class Exercise3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// Guna scanner input
+		// Masukkan dua subject dan markah
+		// Nyatakan subjek mana yang lebih besar markah dan mana yang lebih kecil
+		// Nyatakan subjek yang mempunyai markah lebih besar daripada 50, calon dikira lulus
+		// Nyatakan subjek mana yang lulus dan yang mana gagal
+		
+		// Kira purata markah
+		// Markah 80-100 adalah Gred A
+		// Markah 60-79 adalah Gred B
+		// Markah 50-59 adalah Gred C
+		// Lain-lain markah adalah Gagal
+		String subjectA;
+		String subjectB;
+		double markA;
+		double markB;
+		
+		Scanner scanMe = new Scanner(System.in); 
+		
+		System.out.print("Enter first subject : ");
+		subjectA = scanMe.nextLine();
+		
+		System.out.print("Enter the marks of the first subject : ");
+		markA = scanMe.nextDouble();
+		
+		System.out.print("Enter second subject : ");
+		subjectB = scanMe.next();
+		
+		System.out.print("Enter the marks of second the subject : ");
+		markB = scanMe.nextDouble();
+		
+		if (markA > markB)
+			System.out.println("Your " + subjectA + " has higher marks than " + subjectB);
+		else if (markB > markA)
+			System.out.println("Your " + subjectB + " has higher marks than " + subjectA);
+			
+		if (markA > 50)
+			System.out.println("Your " + subjectA + " is PASS");
+		else if (markA < 50)
+			System.out.println("Your " + subjectA + " is FAILED");
+		
+		if (markB > 50)
+			System.out.println("Your " + subjectB + " is PASS");
+		else if (markB < 50)
+			System.out.println("Your " + subjectB + " is FAILED");
+		
+		double avg = (markA + markB) / 2;
+		
+		if ((avg >= 80) && (avg <= 100))
+		{
+			System.out.println("Grade A");
+		}
+		else if ((avg >= 60) && (avg <= 79))
+		{	
+			System.out.println("Grade B");
+		}
+		else if ((avg >= 50) && (avg <= 59))
+		{
+			System.out.println("Grade C");
+		}
+		else 
+		{
+			System.out.println("Failed");
+		}
+	}
+
+}

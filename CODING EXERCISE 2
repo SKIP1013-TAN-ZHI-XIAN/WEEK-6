@@ -19,7 +19,8 @@ class Exercise2 {
 		System.out.print("Please enter your weight in kg : ");
                 Scanner scanMe = new Scanner(System.in);
                 float weight = scanMe.nextFloat();
-                System.out.print("Please enter your height in cm : ");
+                
+		System.out.print("Please enter your height in cm : ");
                 float height = scanMe.nextFloat();
          
                 // multiplication by 100 * 100 for cm to m conversion

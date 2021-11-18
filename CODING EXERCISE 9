@@ -1,0 +1,53 @@
+package switchBreak;
+
+import java.util.Scanner;
+
+class Exercise9 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// Write a program which calculates marks on basis of given grades in java using switch statement
+		// If marks >=90 then Excellent: Grade A
+		// If marks >=90 and less than 80  then Very Good: Grade B  
+		// If marks >=80 and less than 70 then Good: Grade C 
+		// If marks >=70 and less than 60 then Good: Grade D
+		// If marks >=60 and less than 50 then Good: Grade E
+		// If marks <=50 and less than 40 then Just Passed: Grade F
+		// If any other marks then print Failed!
+		Scanner scanMe = new Scanner(System.in);
+		int mark; 
+		System.out.print("Enter percentage mark : ");
+		mark = scanMe.nextInt();
+		
+		switch (mark / 10)
+		{
+		 case 9 :
+		    System.out.println("Excellent : Grade A");
+		    break;
+		    
+		 case 8 :
+		    System.out.println("Very Good : Grade B"); 
+		    break;
+		    
+		 case 7 :
+		    System.out.println("Good : Grade C");
+		    break;
+		    
+		 case 6 :
+			  System.out.println("Not Very Good : Grade D"); 
+			  break;
+			    
+	   case 5 :
+			  System.out.println("Not Good : Grade E");
+			  break;
+			    
+	   case 4 :
+	      System.out.println("Bad : Grade F");
+			  break;
+			    
+		 default :
+		    System.out.println("Failed");
+		}
+	}
+
+}

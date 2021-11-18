@@ -19,51 +19,51 @@ class Exercise10 {
 		System.out.print("Please enter your weight (kg or lbs) : ");
 		Scanner scanMe = new Scanner(System.in);
 		String unit = scanMe.nextLine();
-		double bmi = scanMe.nextInt();
 		System.out.print("Enter your weight : ");
 		double weight = scanMe.nextDouble();
 		
 		double height = 0;
 		// Checking which weight unit has been selected by user
-        if (unit.equals("kg"))
-        {
-            // If unit is kg
-            // Giving the hint to user what has to enter
-            System.out.print("Enter your height (in meters) : ");
-            // Taking height(in Meters) from user
-            height = scanMe.nextDouble();
-        }
-        else if(unit.equals("lbs"))
-        {
-            // Giving the hint to user what has to enter
-            System.out.println("Enter your Height(In Inches) : ");
-            // Taking height(in Inches) from user
-            height = scanMe.nextDouble();
-        }
+                if (unit.equals("kg"))
+                {
+                    // If unit is kg
+                    // Giving the hint to user what has to enter
+                    System.out.print("Enter your height (in meters) : ");
+                    // Taking height(in Meters) from user
+                    height = scanMe.nextDouble();
+                }
+                else if(unit.equals("lbs"))
+                {
+                    // Giving the hint to user what has to enter
+                    System.out.println("Enter your Height(In Inches) : ");
+                    // Taking height(in Inches) from user
+                    height = scanMe.nextDouble();
+                }
         
-        // Switch Cases on weight units because BMI Formula changes according to
-        // The Weight Units
-        switch (unit)
-        {
-        // If unit is kg
-        case "kg":
-            // Caluclate the bmi with formula and store it in variable
-            bmi = (100 * 100 * weight) / (height * height);
-            // Print the BMI
-            System.out.printf("Your BMI is : %.2f kg/m2", bmi);
-            break;
+	        double bmi = scanMe.nextInt();
+                // Switch Cases on weight units because BMI Formula changes according to
+                // The Weight Units
+                switch (unit)
+                {
+                // If unit is kg
+                case "kg":
+                    // Caluclate the bmi with formula and store it in variable
+                    bmi = (100 * 100 * weight) / (height * height);
+                    // Print the BMI
+                    System.out.printf("Your BMI is : %.2f kg/m2", bmi);
+                    break;
             
-        // If unit is lbs
-        case "lbs":
-            // Calculate the bmi with formula and store it in variable
-            bmi = 703 * ((100 * 100 * weight) / (height * height));
-            // Print the BMI
-            System.out.printf("Your BMI is : %.2f lbs/in2", bmi);
-            break;
+                // If unit is lbs
+                case "lbs":
+                    // Calculate the bmi with formula and store it in variable
+                    bmi = 703 * ((100 * 100 * weight) / (height * height));
+                    // Print the BMI
+                    System.out.printf("Your BMI is : %.2f lbs/in2", bmi);
+                    break;
             
-        default:
-            System.out.println("Please choose correct weight unit");
-        }        
+                default:
+                    System.out.println("Please choose correct weight unit");
+                }        
 	}
 
 }

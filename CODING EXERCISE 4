@@ -1,0 +1,38 @@
+package switchBreak;
+
+import java.util.Scanner;
+
+class Exercise4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// Use scanner input
+		// Enter integer number
+		// Jika  number 20 sama dengan input number
+		// Print number tersebut
+		// Katakan kamu ada 3 number iaitu 10, 20 dan 30
+		// Semak dengan input number
+		Scanner scanMe = new Scanner(System.in);
+		int num;
+		System.out.println("Enter a number : ");
+		num = scanMe.nextInt();
+		
+		if (num == 10)
+		{
+			System.out.println("Number is 10");
+		}
+		else if (num == 20)
+		{
+			System.out.println("Number is 20");
+		}
+		else if (num == 30)
+		{
+			System.out.println("Number is 30");
+		}
+		else 
+		{
+			System.out.println("Invalid number");
+		}
+	}
+
+}

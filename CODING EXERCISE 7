@@ -34,16 +34,16 @@ class Exercise7 {
 		    break;
 		    
 		 case 'D' :
-			System.out.println("Marks >= 60 and less than 70"); 
-			break;
+		    System.out.println("Marks >= 60 and less than 70"); 
+		    break;
 			    
-	     case 'E' :
-			System.out.println("Marks >= 50 and less than 60");
-			break;
-			    
-	     case 'F' :
-	    	System.out.println("Marks <= 40");
-			break;
+	         case 'E' :
+		    System.out.println("Marks >= 50 and less than 60");
+		    break;
+	    
+	         case 'F' :
+	    	    System.out.println("Marks <= 40");
+	            break;
 			    
 		 default :
 		    System.out.println("Invalid marks");

@@ -35,8 +35,8 @@ class Exercise10 {
                 else if(unit.equals("lbs"))
                 {
                     // Giving the hint to user what has to enter
-                    System.out.println("Enter your Height(In Inches) : ");
-                    // Taking height(in Inches) from user
+                    System.out.print("Enter your height (in inches) : ");
+                    // Taking height(in inches) from user
                     height = scanMe.nextDouble();
                 }
         

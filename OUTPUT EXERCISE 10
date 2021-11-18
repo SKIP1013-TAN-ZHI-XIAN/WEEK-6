@@ -1,0 +1,9 @@
+Please enter your weight (kg or lbs) : kg
+Enter your weight : 43
+Enter your height (in meters) : 155
+Your BMI is : 17.90 kg/m2
+
+Please enter your weight (kg or lbs) : lbs
+Enter your weight : 91.80
+Enter your height (in inches) : 61.02
+Your BMI is : 17.33 lbs/in2
